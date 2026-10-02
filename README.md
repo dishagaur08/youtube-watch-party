@@ -1,6 +1,14 @@
-# YouTube Watch Party Platform
+# WatchTogether
 
-> **Real-Time Synchronized YouTube Video Streaming, Role-Based Access Control (RBAC), and Interactive Room Experience.**
+Watch YouTube together in real time.
+
+---
+
+## 🌐 Live Demo & Repository
+
+- **Frontend:** [https://youtube-watch-party-1-xep4.onrender.com](https://youtube-watch-party-1-xep4.onrender.com?utm_source=chatgpt.com)
+- **Backend / API:** [https://youtube-watch-party-cfvx.onrender.com](https://youtube-watch-party-cfvx.onrender.com)
+- **GitHub:** [https://github.com/dishagaur08/youtube-watch-party](https://github.com/dishagaur08/youtube-watch-party)
 
 ---
 
@@ -86,8 +94,8 @@
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
-cd vyntra
+git clone https://github.com/dishagaur08/youtube-watch-party.git
+cd youtube-watch-party
 
 # Install Backend Dependencies
 cd server
@@ -130,6 +138,7 @@ npm test
 ## 🌐 Deployment to Render
 
 ### Backend Web Service (Render)
+- **Live URL:** [https://youtube-watch-party-cfvx.onrender.com](https://youtube-watch-party-cfvx.onrender.com)
 1. Create a new **Web Service** on [Render](https://render.com).
 2. Connect your repository and configure:
    - **Root Directory**: `server`
@@ -139,13 +148,14 @@ npm test
 3. Add Environment Variables:
    - `PORT`: `10000`
    - `NODE_ENV`: `production`
-   - `CLIENT_URL`: `https://your-frontend.onrender.com`
+   - `CLIENT_URL`: `https://youtube-watch-party-1-xep4.onrender.com`
 
 ### Frontend Static Site (Render / Vercel)
+- **Live URL:** [https://youtube-watch-party-1-xep4.onrender.com](https://youtube-watch-party-1-xep4.onrender.com?utm_source=chatgpt.com)
 1. Create a new **Static Site** on [Render](https://render.com).
 2. Configure:
    - **Root Directory**: `client`
    - **Build Command**: `npm run build`
    - **Publish Directory**: `dist`
 3. Add Environment Variables:
-   - `VITE_API_URL`: `https://your-backend.onrender.com`
+   - `VITE_API_URL`: `https://youtube-watch-party-cfvx.onrender.com`
