@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="vyntraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="28" fill="#080A10"/>
+  <rect x="2" y="2" width="96" height="96" rx="26" stroke="url(#glowGrad)" stroke-width="2" stroke-opacity="0.4"/>
+  <!-- Geometric V with sleek energy cut -->
+  <path d="M26 30L44 68C47 74 53 74 56 68L74 30" stroke="url(#vyntraGrad)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="50" cy="42" r="5" fill="#06B6D4"/>
+  <path d="M40 38L50 28L60 38" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

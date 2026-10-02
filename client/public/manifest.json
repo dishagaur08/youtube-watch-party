@@ -1,0 +1,18 @@
+{
+  "short_name": "VYNTRA",
+  "name": "VYNTRA — Connect. Create. Play. Stream.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/app",
+  "background_color": "#080A10",
+  "theme_color": "#6366F1",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["social", "games", "productivity", "utilities"]
+}
