@@ -2,9 +2,19 @@ import { io } from 'socket.io-client';
 
 let socket = null;
 
+const getSocketServerUrl = () => {
+  const rawApiUrl = import.meta.env.VITE_API_URL;
+  if (rawApiUrl) {
+    // Strip trailing /api or slash to get root server URL
+    return rawApiUrl.replace(/\/api\/?$/, '').replace(/\/+$/, '');
+  }
+  return '/';
+};
+
 export const initSocket = () => {
   if (!socket) {
-    socket = io('/', {
+    const serverUrl = getSocketServerUrl();
+    socket = io(serverUrl, {
       transports: ['websocket', 'polling'],
       reconnectionAttempts: 10,
       reconnectionDelay: 1000,

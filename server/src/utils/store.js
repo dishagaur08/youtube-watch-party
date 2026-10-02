@@ -24,8 +24,8 @@ class MemoryStore {
     this.initDefaultData();
   }
 
-  async initDefaultData() {
-    const hashedPassword = await bcrypt.hash('vyntra123', 10);
+  initDefaultData() {
+    const hashedPassword = bcrypt.hashSync('vyntra123', 10);
     
     // Seed Users
     const adminUser = {

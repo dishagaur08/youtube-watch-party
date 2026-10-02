@@ -36,31 +36,45 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-    const res = await api.post('/auth/login', { email, password });
-    if (res.data?.success) {
-      const { user: userData, token, refreshToken } = res.data.data;
-      localStorage.setItem('vyntra_token', token);
-      localStorage.setItem('vyntra_refresh_token', refreshToken);
-      setUser(userData);
-      const socket = getSocket();
-      socket.emit('user:online', { userId: userData._id || userData.id });
-      return { success: true };
+    try {
+      const res = await api.post('/auth/login', { email, password });
+      if (res.data?.success) {
+        const { user: userData, token, refreshToken } = res.data.data;
+        localStorage.setItem('vyntra_token', token);
+        localStorage.setItem('vyntra_refresh_token', refreshToken);
+        setUser(userData);
+        const socket = getSocket();
+        socket.emit('user:online', { userId: userData._id || userData.id });
+        return { success: true };
+      }
+      return { success: false, message: res.data?.message || 'Login failed' };
+    } catch (err) {
+      return { 
+        success: false, 
+        message: err.response?.data?.message || err.message || 'Connection to server failed' 
+      };
     }
-    return { success: false, message: res.data?.message };
   };
 
   const register = async (username, email, password, displayName) => {
-    const res = await api.post('/auth/register', { username, email, password, displayName });
-    if (res.data?.success) {
-      const { user: userData, token, refreshToken } = res.data.data;
-      localStorage.setItem('vyntra_token', token);
-      localStorage.setItem('vyntra_refresh_token', refreshToken);
-      setUser(userData);
-      const socket = getSocket();
-      socket.emit('user:online', { userId: userData._id || userData.id });
-      return { success: true };
+    try {
+      const res = await api.post('/auth/register', { username, email, password, displayName });
+      if (res.data?.success) {
+        const { user: userData, token, refreshToken } = res.data.data;
+        localStorage.setItem('vyntra_token', token);
+        localStorage.setItem('vyntra_refresh_token', refreshToken);
+        setUser(userData);
+        const socket = getSocket();
+        socket.emit('user:online', { userId: userData._id || userData.id });
+        return { success: true };
+      }
+      return { success: false, message: res.data?.message || 'Registration failed' };
+    } catch (err) {
+      return { 
+        success: false, 
+        message: err.response?.data?.message || err.message || 'Connection to server failed' 
+      };
     }
-    return { success: false, message: res.data?.message };
   };
 
   const logout = () => {
