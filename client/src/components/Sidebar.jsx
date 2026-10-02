@@ -47,12 +47,12 @@ const Sidebar = () => {
         <NavLink to="/app" className="flex items-center gap-3 px-3 py-2 mb-6 group">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-500 to-cyan-400 p-[1.5px] shadow-glow-sm flex items-center justify-center group-hover:scale-105 transition-transform">
             <div className="w-full h-full bg-vyntra-bg rounded-[10px] flex items-center justify-center">
-              <span className="font-extrabold text-lg text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-300">V</span>
+              <span className="font-extrabold text-lg text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-300">W</span>
             </div>
           </div>
           <div className="hidden md:block">
-            <span className="font-bold text-xl tracking-wider text-white">VYNTRA</span>
-            <span className="block text-[10px] text-vyntra-cyan font-mono tracking-widest uppercase">Connect • Play</span>
+            <span className="font-bold text-lg tracking-wider text-white">WatchTogether</span>
+            <span className="block text-[9px] text-vyntra-cyan font-mono tracking-tight">Watch YouTube together in real time.</span>
           </div>
         </NavLink>
 

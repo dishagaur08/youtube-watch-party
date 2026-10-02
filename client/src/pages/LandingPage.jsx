@@ -39,12 +39,12 @@ const LandingPage = () => {
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-500 to-cyan-400 p-[1.5px] shadow-glow-sm flex items-center justify-center">
             <div className="w-full h-full bg-vyntra-bg rounded-[10px] flex items-center justify-center">
-              <span className="font-extrabold text-lg text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-300">V</span>
+              <span className="font-extrabold text-lg text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-300">W</span>
             </div>
           </div>
           <div>
-            <span className="font-bold text-xl tracking-wider text-white">VYNTRA</span>
-            <span className="hidden sm:inline-block ml-2 text-[10px] text-cyan-400 font-mono tracking-widest uppercase">Next-Gen Platform</span>
+            <span className="font-bold text-xl tracking-wider text-white">WatchTogether</span>
+            <span className="hidden sm:inline-block ml-2 text-[10px] text-cyan-400 font-mono tracking-widest uppercase">YouTube Watch Party</span>
           </div>
         </div>
 
@@ -76,18 +76,18 @@ const LandingPage = () => {
       <section className="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-indigo-500/15 via-violet-500/15 to-cyan-500/15 border border-indigo-500/30 text-xs font-medium text-indigo-300 mb-8 shadow-glow-sm">
           <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
-          <span>The Next-Generation AI-Native Real-Time Platform</span>
+          <span>Watch YouTube together in real time.</span>
         </div>
 
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-6 max-w-4xl mx-auto leading-tight">
-          Connect. Create. <br />
+          Watch YouTube <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-violet-400 to-cyan-300">
-            Play. Stream.
+            together in real time.
           </span>
         </h1>
 
         <p className="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-          A unified ecosystem combining real-time messaging, WebRTC audio/video calls, multiplayer gaming arena, synchronized watch rooms, and cutting-edge AI document intelligence.
+          A unified ecosystem combining real-time synchronized YouTube watch parties, role-based controls, seek sync, live room chat, and interactive reactions.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
@@ -115,7 +115,7 @@ const LandingPage = () => {
                 <div className="w-3 h-3 rounded-full bg-rose-500/80" />
                 <div className="w-3 h-3 rounded-full bg-amber-500/80" />
                 <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                <span className="ml-3 text-xs font-mono text-slate-400">app.vyntra.io / workspace-alpha</span>
+                <span className="ml-3 text-xs font-mono text-slate-400">watchtogether.io / live-party</span>
               </div>
               <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                 ● Live 60 FPS Grid
@@ -131,10 +131,10 @@ const LandingPage = () => {
                 </div>
                 <div className="space-y-2 text-xs">
                   <div className="bg-white/5 p-2 rounded-lg text-slate-300">
-                    <span className="font-bold text-white">@alex:</span> Up for a quick Chess blitz match?
+                    <span className="font-bold text-white">@alex:</span> Up for a watch party session?
                   </div>
                   <div className="bg-indigo-600/30 p-2 rounded-lg text-indigo-200 border border-indigo-500/30">
-                    <span className="font-bold text-white">@you:</span> Yes! Room created on VYNTRA ♟️
+                    <span className="font-bold text-white">@you:</span> Yes! Room created on WatchTogether 🎬
                   </div>
                 </div>
               </div>
@@ -249,10 +249,10 @@ const LandingPage = () => {
       <section className="max-w-5xl mx-auto px-6 py-20 text-center">
         <div className="bg-gradient-to-r from-indigo-900/40 via-violet-900/40 to-cyan-900/40 border border-indigo-500/30 rounded-3xl p-8 sm:p-12 shadow-glow-md">
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white mb-4">
-            Step Into The Future of Social Communication
+            Watch YouTube together in real time.
           </h2>
           <p className="text-slate-300 max-w-xl mx-auto text-sm sm:text-base mb-8">
-            Experience the unified power of VYNTRA today. Ready out-of-the-box with real-time sockets, gaming, and AI co-pilots.
+            Experience the synchronized power of WatchTogether today. Ready out-of-the-box with real-time sockets, seek sync, and role permissions.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -273,7 +273,7 @@ const LandingPage = () => {
 
       {/* Footer */}
       <footer className="border-t border-white/5 py-8 text-center text-xs text-slate-500">
-        <p>© 2026 VYNTRA Technologies Inc. Connect. Create. Play. Stream. All rights reserved.</p>
+        <p>© 2026 WatchTogether. Watch YouTube together in real time. All rights reserved.</p>
       </footer>
     </div>
   );

@@ -54,13 +54,13 @@ const LoginPage = () => {
           <Link to="/" className="inline-flex items-center gap-2 mb-2">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-400 p-[1.5px] flex items-center justify-center">
               <div className="w-full h-full bg-vyntra-bg rounded-[10px] flex items-center justify-center font-bold text-white text-lg">
-                V
+                W
               </div>
             </div>
-            <span className="font-bold text-2xl tracking-wider text-white">VYNTRA</span>
+            <span className="font-bold text-2xl tracking-wider text-white">WatchTogether</span>
           </Link>
           <h2 className="text-xl font-bold text-white">Welcome Back</h2>
-          <p className="text-xs text-slate-400">Sign in to access your real-time social & gaming hub</p>
+          <p className="text-xs text-slate-400">Watch YouTube together in real time.</p>
         </div>
 
         {/* Demo Fast Login Buttons */}
